@@ -1,6 +1,6 @@
 #!/bin/bash
-apt-get update;
-apt-get install vim lxterminal build-essential mingw-w64 python-pip 
+sudo apt-get update;
+sudo apt-get install vim lxterminal build-essential mingw-w64 python-pip 
 #additions to bashrc
 echo "
 #bash on windows does not respect values set in /etc/login.defs
@@ -11,6 +11,8 @@ source ~/.bashrc;
 
 #install apt-vim
 curl -sL https://raw.githubusercontent.com/egalpin/apt-vim/master/install.sh | sh;
+
+source ~/.bashrc;
 
 apt-vim install -y https://github.com/scrooloose/nerdtree.git
 
@@ -23,3 +25,6 @@ set fileformats=unix
 set mouse=n
 set ttymouse=xterm2
 ' >> ~/.vimrc
+
+sudo update-alternatives --config editor;
+
