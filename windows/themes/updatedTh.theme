@@ -1,0 +1,100 @@
+; Copyright © Microsoft Corp.
+
+[Theme]
+; High Contrast #1 - IDS_THEME_DISPLAYNAME_HC1
+DisplayName=updatedTheme
+ThemeId={81286C59-7F94-4E87-92D5-A90410F6B533}
+
+; Computer - SHIDI_SERVER
+[CLSID\{20D04FE0-3AEA-1069-A2D8-08002B30309D}\DefaultIcon]
+DefaultValue=%SystemRoot%\System32\imageres.dll,-109
+
+; UsersFiles - SHIDI_USERFILES
+[CLSID\{59031A47-3F72-44A7-89C5-5595FE6B30EE}\DefaultIcon]
+DefaultValue=%SystemRoot%\System32\imageres.dll,-123
+
+; Network - SHIDI_MYNETWORK
+[CLSID\{F02C1A0D-BE21-4350-88B0-7367FC96EF3C}\DefaultIcon]
+DefaultValue=%SystemRoot%\System32\imageres.dll,-25
+
+; Recycle Bin - SHIDI_RECYCLERFULL SHIDI_RECYCLER
+[CLSID\{645FF040-5081-101B-9F08-00AA002F954E}\DefaultIcon]
+Full=%SystemRoot%\System32\imageres.dll,-54
+Empty=%SystemRoot%\System32\imageres.dll,-55
+
+[Control Panel\Colors]
+ActiveTitle=19 20 26
+Background=0 0 0 
+ButtonFace=15 14 11 
+ButtonText=108 109 50
+GrayText=100 123 155
+Hilight=83 113 89
+HilightText=0 0 0
+HotTrackingColor=13 176 255
+InactiveTitle=55 57 74
+InactiveTitleText=140 126 62 
+TitleText=128 128 0
+Window=0 0 0
+WindowText=154 172 138
+Scrollbar=0 0 0
+Menu=0 0 0
+WindowFrame=0 255 0
+MenuText=255 255 255
+ActiveBorder=0 0 255
+InactiveBorder=0 255 255
+AppWorkspace=0 0 0
+ButtonShadow=128 128 128
+ButtonHilight=192 192 192
+ButtonDkShadow=255 255 255
+ButtonLight=255 255 255
+InfoText=255 255 0
+InfoWindow=0 0 0
+ButtonAlternateFace=192 192 192
+GradientActiveTitle=0 0 255
+GradientInactiveTitle=0 255 255
+MenuHilight=0 128 0
+MenuBar=0 0 0
+
+[Control Panel\Cursors]
+Arrow=%SystemRoot%\cursors\arrow_i.cur
+Help=%SystemRoot%\cursors\help_i.cur
+AppStarting=%SystemRoot%\cursors\wait_i.cur
+Wait=%SystemRoot%\cursors\busy_i.cur
+NWPen=%SystemRoot%\cursors\pen_i.cur
+No=%SystemRoot%\cursors\no_i.cur
+SizeNS=%SystemRoot%\cursors\size4_i.cur
+SizeWE=%SystemRoot%\cursors\size3_i.cur
+Crosshair=%SystemRoot%\cursors\cross_i.cur
+IBeam=%SystemRoot%\cursors\beam_i.cur
+SizeNWSE=%SystemRoot%\cursors\size2_i.cur
+SizeNESW=%SystemRoot%\cursors\size1_i.cur
+SizeAll=%SystemRoot%\cursors\move_i.cur
+UpArrow=%SystemRoot%\cursors\up_i.cur
+DefaultValue=Windows Inverted
+Hand=%SystemRoot%\cursors\aero_link_i.cur
+Link=
+
+[Control Panel\Desktop]
+Wallpaper=DesktopBackground\godzilla.jpg
+Pattern=
+MultimonBackgrounds=0
+PicturePosition=4
+
+[VisualStyles]
+Path=%SystemRoot%\Resources\Themes\Aero\AeroLite.msstyles
+ColorStyle=NormalColor
+Size=NormalSize
+HighContrast=1
+ColorizationColor=0X7F000000
+AutoColorization=0
+VisualStyleVersion=10
+
+[boot]
+SCRNSAVE.EXE=
+
+[MasterThemeSelector]
+MTSM=RJSPBS
+
+[Sounds]
+; IDS_SCHEME_DEFAULT
+SchemeName=@mmres.dll,-800
