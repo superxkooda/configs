@@ -1,6 +1,8 @@
 #!/bin/bash
+#installs
 sudo apt-get update;
-sudo apt-get install vim lxterminal build-essential mingw-w64 python-pip 
+sudo apt-get install vim lxterminal build-essential mingw-w64 python-pip libssl-dev libffi-dev python-dev 
+sudo -H pip install ansible==2.1;
 #additions to bashrc
 echo "
 #bash on windows does not respect values set in /etc/login.defs
@@ -26,5 +28,10 @@ set mouse=n
 set ttymouse=xterm2
 ' >> ~/.vimrc
 
+#fixes dbus issue with terminator
+sudo sed -i 's$<listen>.*</listen>$<listen>tcp:host=localhost,port=0</listen>$' /etc/dbus-1/session.conf;
+
+#change default editor
 sudo update-alternatives --config editor;
+
 
