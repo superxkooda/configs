@@ -1,2 +1,2 @@
 @echo off
-bash -c "DISPLAY=:0.0 terminator --working-directory=/home/me"
+bash -c "DISPLAY=:0.0 terminator --working-directory=~/"
